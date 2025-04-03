@@ -1,883 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L5G30BZ66G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L5G30BZ66G');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Comprehensive steel industry resource navigation covering the entire value chain from raw materials to production, including iron ore suppliers, coking coal, scrap steel recycling, and major steel manufacturers worldwide.">
-    <title>Steel Industry Navigator | Global Steel Resources Directory</title>
-    <link rel="canonical" href="https://steelindustryhub.com/" />
-    <style>
-        /* CSS Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        
-        /* Variables */
-        :root {
-            --primary-color: #0071e3;
-            --secondary-color: #1d1d1f;
-            --background-color: #f5f5f7;
-            --card-background: #ffffff;
-            --text-color: #1d1d1f;
-            --section-background: #fbfbfd;
-            --border-color: #d2d2d7;
-            --highlight-color: #86868b;
-        }
-        
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.5;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header */
-        header {
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid var(--border-color);
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0;
-        }
-        
-        .logo {
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 24px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: var(--secondary-color);
-            font-size: 14px;
-            font-weight: 400;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: var(--primary-color);
-        }
-        
-        /* Hero Section */
-        .hero {
-            background-color: var(--section-background);
-            padding: 100px 0;
-            text-align: center;
-        }
-        
-        h1 {
-            font-size: 48px;
-            font-weight: 600;
-            margin-bottom: 16px;
-            letter-spacing: -0.5px;
-        }
-        
-        .hero p {
-            font-size: 24px;
-            color: var(--highlight-color);
-            margin-bottom: 32px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .search-container {
-            max-width: 600px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
-        .search-container input {
-            width: 100%;
-            padding: 16px 24px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            font-size: 16px;
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px);
-            outline: none;
-        }
-        
-        .search-container input:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.2);
-        }
-        
-        /* Section Styles */
-        section {
-            padding: 80px 0;
-        }
-        
-        section:nth-child(even) {
-            background-color: var(--section-background);
-        }
-        
-        h2 {
-            font-size: 32px;
-            font-weight: 600;
-            margin-bottom: 48px;
-            text-align: center;
-            letter-spacing: -0.5px;
-        }
-        
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 24px;
-        }
-        
-        .card {
-            background-color: var(--card-background);
-            border-radius: 18px;
-            overflow: hidden;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-        }
-        
-        .card-content {
-            padding: 24px;
-        }
-        
-        .card h3 {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--secondary-color);
-        }
-        
-        .card p {
-            font-size: 14px;
-            color: var(--highlight-color);
-            margin-bottom: 16px;
-        }
-        
-        .card a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            display: inline-flex;
-            align-items: center;
-        }
-        
-        .card a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--secondary-color);
-            color: #fff;
-            padding: 60px 0;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 40px;
-        }
-        
-        .footer-column h4 {
-            font-size: 16px;
-            margin-bottom: 16px;
-            font-weight: 600;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 8px;
-        }
-        
-        .footer-column ul li a {
-            color: #a1a1a6;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.3s;
-        }
-        
-        .footer-column ul li a:hover {
-            color: #fff;
-        }
-        
-        .copyright {
-            margin-top: 60px;
-            text-align: center;
-            color: #6e6e73;
-            font-size: 12px;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .mobile-nav-toggle {
-                display: block;
-                background: none;
-                border: none;
-                font-size: 24px;
-                color: var(--secondary-color);
-                cursor: pointer;
-            }
-            
-            nav {
-                position: fixed;
-                top: 0;
-                right: -300px;
-                width: 300px;
-                height: 100%;
-                background-color: var(--card-background);
-                padding: 80px 20px;
-                transition: right 0.3s;
-                z-index: 1000;
-            }
-            
-            nav.active {
-                right: 0;
-            }
-            
-            nav ul {
-                flex-direction: column;
-            }
-            
-            nav ul li {
-                margin: 16px 0;
-            }
-            
-            nav ul li a {
-                font-size: 18px;
-            }
-            
-            h1 {
-                font-size: 36px;
-            }
-            
-            .hero p {
-                font-size: 18px;
-            }
-            
-            section {
-                padding: 60px 0;
-            }
-            
-            h2 {
-                font-size: 28px;
-                margin-bottom: 36px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .header-container {
-                padding: 12px 0;
-            }
-            
-            .logo {
-                font-size: 18px;
-            }
-            
-            h1 {
-                font-size: 32px;
-            }
-            
-            .hero {
-                padding: 80px 0;
-            }
-            
-            .hero p {
-                font-size: 16px;
-            }
-            
-            .search-container input {
-                padding: 12px 20px;
-            }
-            
-            .card {
-                border-radius: 14px;
-            }
-            
-            .card-content {
-                padding: 20px;
-            }
-            
-            .card h3 {
-                font-size: 18px;
-            }
-        }
-    </style>
+    <meta name="description" content="Navigate through our premium services and products with our easy-to-use navigation hub.">
+    <meta name="keywords" content="navigation, services, products, hub">
+    <link rel="canonical" href="https://www.yourwebsite.com/index.html">
+    <title>Premium Navigation Hub | Discover Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container header-container">
-            <a href="#" class="logo">Steel Industry Navigator</a>
-            <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
-            <nav>
-                <ul>
-                    <li><a href="#raw-materials">Raw Materials</a></li>
-                    <li><a href="#steel-producers">Steel Producers</a></li>
-                    <li><a href="#specialty-steel">Specialty Steel</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">NavigateHub</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#products">Products</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#support">Support</a>
+            </div>
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Global Steel Industry Resource Directory</h1>
-            <p>Your comprehensive guide to the steel industry value chain, from raw materials to production and beyond</p>
-            <div class="search-container">
-                <input type="text" placeholder="Search for resources, companies, or materials..." aria-label="Search resources">
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Discover a New Way to Navigate</h1>
+                <p>Seamlessly connect with our premium services and products through our intuitive navigation platform.</p>
+                <a href="#explore" class="cta-button">Explore Now</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="raw-materials">
-        <div class="container">
-            <h2>Raw Materials Supply</h2>
-            
-            <div class="subsection">
-                <h3 style="text-align: center; margin-bottom: 24px; font-size: 24px;">Iron Ore Resources</h3>
-                <div class="cards-grid">
+        <section id="services" class="content-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="card-grid">
                     <div class="card">
-                        <div class="card-content">
-                            <h3>China Mining Association</h3>
-                            <p>The most authoritative mining industry organization in China, providing information on mineral resource policies, standards, and industry news.</p>
-                            <a href="http://www.chinamining.org.cn" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
+                        <div class="card-icon">🚀</div>
+                        <h3>Performance Optimization</h3>
+                        <p>Boost your digital presence with our performance-focused solutions.</p>
+                        <a href="#" class="learn-more">Learn more</a>
                     </div>
-                    
                     <div class="card">
-                        <div class="card-content">
-                            <h3>Global Mineral Resources Network</h3>
-                            <p>Aggregates global mineral resource information, providing mining technologies, trade data, and investment opportunities.</p>
-                            <a href="http://www.miningworld.org" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
+                        <div class="card-icon">🛡️</div>
+                        <h3>Security Enhancement</h3>
+                        <p>Protect your digital assets with our advanced security protocols.</p>
+                        <a href="#" class="learn-more">Learn more</a>
                     </div>
-                    
                     <div class="card">
-                        <div class="card-content">
-                            <h3>Iron Ore Index</h3>
-                            <p>Platts iron ore price index, an important pricing reference for global iron ore trade, providing daily price updates and market analysis.</p>
-                            <a href="http://www.platts.com/iron-ore-index" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>MySteel - Iron Ore Channel</h3>
-                            <p>Leading domestic iron ore information platform, providing daily prices, port inventory, import volume, and in-depth market analysis reports.</p>
-                            <a href="http://www.mysteel.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>BHP</h3>
-                            <p>One of the world's largest mining companies, primarily producing iron ore, copper, coal, and other resources.</p>
-                            <a href="http://www.bhp.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Rio Tinto</h3>
-                            <p>The second-largest mining company in the world, with iron ore business accounting for a significant portion of its revenue.</p>
-                            <a href="http://www.riotinto.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Vale</h3>
-                            <p>Brazilian mining giant and one of the world's largest iron ore producers, with the Carajás mine being the world's largest iron ore mine.</p>
-                            <a href="http://www.vale.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Fortescue Metals Group</h3>
-                            <p>Australia's third-largest iron ore producer, focused on iron ore mining and export, known for its low-cost and high-efficiency operations.</p>
-                            <a href="http://www.fmgl.com.au" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Ansteel Mining</h3>
-                            <p>Leading iron ore producer in China, owning multiple mining areas including the Anshan open-pit mine.</p>
-                            <a href="http://mining.ansteel.cn" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="subsection" style="margin-top: 60px;">
-                <h3 style="text-align: center; margin-bottom: 24px; font-size: 24px;">Coking Coal Resources</h3>
-                <div class="cards-grid">
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>China Coal Industry Association</h3>
-                            <p>National coal industry organization providing policy interpretation, standard setting, statistical data, and industry self-regulation.</p>
-                            <a href="http://www.coalchina.org.cn" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Coal Resources Network</h3>
-                            <p>Professional coal information service platform providing coal price, output, inventory data, and industry dynamics.</p>
-                            <a href="http://www.coal.com.cn" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>China Coking Industry Association</h3>
-                            <p>National coking industry organization providing information on coke production, trade, technology, and environmental protection.</p>
-                            <a href="http://www.cncc.org.cn" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Coke Futures</h3>
-                            <p>Dalian Commodity Exchange coke futures trading platform, providing real-time quotes, trading rules, and risk management tools.</p>
-                            <a href="http://www.dce.com.cn" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>China Coal Energy</h3>
-                            <p>China's second-largest coal enterprise, with businesses covering coal production, coal chemical industry, power generation, and more.</p>
-                            <a href="http://www.chinacoalenergy.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Shanxi Coking Coal Group</h3>
-                            <p>China's largest coking coal producer, owning multiple high-quality coking coal mines, mainly supplying large domestic steel enterprises.</p>
-                            <a href="http://www.shanxicoking.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Yankuang Group</h3>
-                            <p>Large Chinese coal enterprise with businesses covering coal mining, coal chemical industry, and electromechanical equipment manufacturing.</p>
-                            <a href="http://www.yankuanggroup.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="subsection" style="margin-top: 60px;">
-                <h3 style="text-align: center; margin-bottom: 24px; font-size: 24px;">Scrap Steel Resources</h3>
-                <div class="cards-grid">
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>China Scrap Steel Application Association</h3>
-                            <p>Authoritative organization in the domestic scrap steel industry, providing market information, recycling technology, and policy regulations.</p>
-                            <a href="http://www.camu.org.cn" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Bureau of International Recycling</h3>
-                            <p>Global waste metal recycling industry organization providing international scrap trade rules, market dynamics, and environmental standards.</p>
-                            <a href="http://www.bir.org" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Renewable Resource Trading Platform</h3>
-                            <p>Trading platform operated by the China Renewable Resource Recovery and Utilization Association, providing trading information and price indices.</p>
-                            <a href="http://www.crra.com.cn" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Scrap Steel Resource Network</h3>
-                            <p>Professional scrap steel information platform providing scrap price, inventory, circulation data, and processing technology information.</p>
-                            <a href="http://www.fglt.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>American Iron and Steel Institute - Recycling</h3>
-                            <p>Subordinate organization of the American Iron and Steel Association, providing scrap recycling technology research and market analysis.</p>
-                            <a href="http://www.steel.org/recycling" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="steel-producers">
-        <div class="container">
-            <h2>Steel Producers</h2>
-            
-            <div class="subsection">
-                <h3 style="text-align: center; margin-bottom: 24px; font-size: 24px;">Major Steel Groups</h3>
-                <div class="cards-grid">
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>China Baowu Steel Group</h3>
-                            <p>China's largest and the world's second-largest steel enterprise, with annual steel production exceeding 100 million tons.</p>
-                            <a href="http://www.baowugroup.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>HBIS Group</h3>
-                            <p>China's second-largest steel enterprise, mainly producing construction steel and plate products, with production bases across the country.</p>
-                            <a href="http://www.hbisco.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Ansteel Group</h3>
-                            <p>China's very large steel enterprise, an important plate production base, with leading advantages in automotive, shipbuilding, and home appliance plates.</p>
-                            <a href="http://www.ansteel.cn" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Shougang Group</h3>
-                            <p>Well-known Chinese steel enterprise with modern steel bases such as Jingtang Steel, competitive in automotive plates and electrical steel.</p>
-                            <a href="http://www.shougang.com.cn" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Shagang Group</h3>
-                            <p>China's largest private steel enterprise, mainly producing construction steel and medium-thick plates, with significant influence in the Yangtze River Delta region.</p>
-                            <a href="http://www.sha-steel.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Nippon Steel</h3>
-                            <p>Japan's largest steel enterprise, globally leading in high-end automotive plates, shipbuilding plates, and special steel, with strong R&D capability.</p>
-                            <a href="http://www.nipponsteel.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>POSCO</h3>
-                            <p>South Korea's largest steel enterprise, globally renowned for high efficiency and high quality, with strong competitiveness in automotive and home appliance plates.</p>
-                            <a href="http://www.posco.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>ArcelorMittal</h3>
-                            <p>The world's largest steel enterprise, with business covering over 60 countries, and products ranging from ordinary building materials to high-end automotive plates.</p>
-                            <a href="http://www.arcelormittal.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Nucor Steel</h3>
-                            <p>North America's largest steel producer, with globally leading electric furnace steel production technology, known for its small-scale, flexible production model.</p>
-                            <a href="http://www.nucor.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-content">
-                            <h3>Tata Steel</h3>
-                            <p>India's largest steel enterprise and one of the world's top ten steel companies, with products covering construction, automotive, energy, and other fields.</p>
-                            <a href="http://www.tatasteel.com" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="specialty-steel">
-        <div class="container">
-            <h2>Specialty Steel Enterprises</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Daye Special Steel</h3>
-                        <p>Chinese high-quality special steel producer focusing on bearing steel, tool and die steel, and automotive steel products.</p>
-                        <a href="http://www.daye-steel.com" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Northeast Special Steel Group</h3>
-                        <p>Large Chinese special steel production base, mainly producing high-speed tool steel, die steel, bearing steel, and other high-end special steels.</p>
-                        <a href="http://www.dtsteel.cc" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>TISCO Stainless</h3>
-                        <p>Asia's largest stainless steel producer with a complete range of stainless steel products, holding an important position in aviation, energy, and medical fields.</p>
-                        <a href="http://www.tisco.com.cn" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Baosteel Special Steel</h3>
-                        <p>Special steel enterprise under China Baowu, professionally producing high-temperature alloys, tool and die steel, bearing steel, and other high-end special steels.</p>
-                        <a href="http://special.baowugroup.com" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Xining Special Steel</h3>
-                        <p>Important special steel producer in Northwest China, mainly producing alloy structural steel, bearing steel, spring steel, etc., with obvious resource advantages.</p>
-                        <a href="http://www.xtgf.com" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>ThyssenKrupp</h3>
-                        <p>German multinational industrial group whose special steel business enjoys a reputation in automotive, machinery, and energy sectors, with advanced technology and excellent quality.</p>
-                        <a href="http://www.thyssenkrupp.com" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Voestalpine</h3>
-                        <p>Leading European steel and technology group, with special steel materials and products holding an important position in the automotive, railway, and energy industries.</p>
-                        <a href="http://www.voestalpine.com" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Daido Special Steel</h3>
-                        <p>Leading Japanese special steel enterprise, focusing on the production of high-alloy tool steel, high-speed steel, and bearing steel, with exquisite technology and stable quality.</p>
-                        <a href="http://www.daido.co.jp" target="_blank" rel="noopener">Visit Website →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="engineering-design">
-            <h2>Engineering Design Institutes</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-content">
-                        <h3>MCC Group</h3>
-                        <p>China's largest engineering and technical group in the metallurgical construction field, responsible for designing most domestic steel enterprises.</p>
-                        <a href="http://www.mcc.com.cn" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>CISDI Group</h3>
-                        <p>An important design institute under MCC Group, focusing on metallurgical engineering contracting and consulting design with core technologies in steel smelting and rolling.</p>
-                        <a href="http://www.cisdi.com.cn" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>WISDRI Engineering</h3>
-                        <p>Specializing in metallurgical and construction engineering design and technical services, responsible for engineering design of major steel enterprises like Wuhan Steel and Baosteel.</p>
-                        <a href="http://www.wisdri.com.cn" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>MCC Northern Engineering</h3>
-                        <p>Focuses on steel metallurgical engineering design, particularly in ironmaking, sintering, and pelletizing, with experience in numerous major steel projects.</p>
-                        <a href="http://www.mccnorth.com.cn" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>MCC Eastern Engineering</h3>
-                        <p>Specializes in metallurgical, steel, and non-ferrous metal engineering design, with rich experience in steelmaking, continuous casting, and rolling technology.</p>
-                        <a href="http://www.mecc.cn" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>SMS Group</h3>
-                        <p>German metallurgical equipment manufacturing and engineering design giant providing full-process engineering design and technical services for steel production.</p>
-                        <a href="http://www.sms-group.com" target="_blank" rel="noopener">Visit Website →</a>
+                        <div class="card-icon">📊</div>
+                        <h3>Analytics & Insights</h3>
+                        <p>Make data-driven decisions with our comprehensive analytics tools.</p>
+                        <a href="#" class="learn-more">Learn more</a>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="equipment-suppliers">
-            <h2>Complete Equipment Suppliers</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-content">
-                        <h3>China Heavy Machinery Industry Association</h3>
-                        <p>Chinese heavy machinery industry organization providing industry standards, policy interpretations, and market dynamics for the metallurgical equipment manufacturing industry.</p>
-                        <a href="http://www.cmhi.com.cn" target="_blank" rel="noopener">Visit Website →</a>
+
+        <section id="products" class="content-section dark">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-showcase">
+                    <div class="product">
+                        <div class="product-image" aria-label="Product image"></div>
+                        <h3>NavigateX Pro</h3>
+                        <p>Our flagship navigation solution for enterprise clients.</p>
+                        <span class="price">$299.99</span>
+                        <a href="#" class="buy-now">Buy now</a>
                     </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Siemens Metallurgical Technology</h3>
-                        <p>Metallurgical technology division of Siemens Germany, providing comprehensive automation and digitalization solutions for steel production processes.</p>
-                        <a href="http://www.siemens-vai.com" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Primetals Technologies</h3>
-                        <p>Metallurgical technology company formed by the merger of Siemens VAI and Mitsubishi-Hitachi, providing full-process equipment and technical services for steel production.</p>
-                        <a href="http://www.primetals.com" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>ABB Group</h3>
-                        <p>Swiss-Swedish multinational corporation leading in power and automation technology, providing electrical automation solutions for steel enterprises.</p>
-                        <a href="http://www.abb.com.cn" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>CITIC Heavy Industries</h3>
-                        <p>Leading Chinese heavy machinery manufacturing enterprise providing large-scale complete equipment and technical services for steel, mining, and other industries.</p>
-                        <a href="http://www.citichmc.com" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Danieli Engineering</h3>
-                        <p>Leading Italian metallurgical equipment manufacturing and engineering design company with advanced technology in rolling and continuous casting and extensive global operations.</p>
-                        <a href="http://www.danieli.com" target="_blank" rel="noopener">Visit Website →</a>
+                    <div class="product">
+                        <div class="product-image" aria-label="Product image"></div>
+                        <h3>NavigateX Lite</h3>
+                        <p>Perfect solution for small businesses and startups.</p>
+                        <span class="price">$149.99</span>
+                        <a href="#" class="buy-now">Buy now</a>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="specialized-equipment">
-            <h2>Specialized Equipment Suppliers</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Metallurgical Roll Network</h3>
-                        <p>Professional roll information platform providing roll technology, market information, and supplier information as an important channel for industry communication.</p>
-                        <a href="http://www.zhague.com" target="_blank" rel="noopener">Visit Website →</a>
+
+        <section id="solutions" class="content-section">
+            <div class="container">
+                <h2>Custom Solutions</h2>
+                <div class="solutions-container">
+                    <div class="solutions-content">
+                        <p>We understand that every business has unique needs. That's why we offer customized solutions tailored to your specific requirements.</p>
+                        <ul class="features-list">
+                            <li>Tailored to your industry</li>
+                            <li>Scalable architecture</li>
+                            <li>Integration with existing systems</li>
+                            <li>Dedicated support team</li>
+                        </ul>
+                        <a href="#" class="cta-button secondary">Request a consultation</a>
                     </div>
+                    <div class="solutions-image" aria-label="Custom solutions illustration"></div>
                 </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Schneider Electric</h3>
-                        <p>French multinational corporation and global leader in electrical equipment and automation management, providing electrical system solutions for steel enterprises.</p>
-                        <a href="http://www.schneider-electric.com" target="_blank" rel="noopener">Visit Website →</a>
+            </div>
+        </section>
+
+        <section id="support" class="content-section dark">
+            <div class="container">
+                <h2>Support & Resources</h2>
+                <div class="support-grid">
+                    <div class="support-card">
+                        <h3>Documentation</h3>
+                        <p>Access our comprehensive guides and documentation.</p>
+                        <a href="#">View docs</a>
                     </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Rockwell Automation</h3>
-                        <p>Leading American industrial automation company providing comprehensive automation control systems and solutions for the steel industry.</p>
-                        <a href="http://www.rockwellautomation.com" target="_blank" rel="noopener">Visit Website →</a>
+                    <div class="support-card">
+                        <h3>FAQs</h3>
+                        <p>Find answers to commonly asked questions.</p>
+                        <a href="#">Read FAQs</a>
                     </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Vesuvius Group (Refractory Materials)</h3>
-                        <p>Global leading supplier of refractory materials and metallurgical process control equipment, providing high-quality refractory material solutions for steel enterprises.</p>
-                        <a href="http://www.vesuvius.com" target="_blank" rel="noopener">Visit Website →</a>
+                    <div class="support-card">
+                        <h3>Community</h3>
+                        <p>Join our community forum to connect with other users.</p>
+                        <a href="#">Join now</a>
                     </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Honeywell Process Control</h3>
-                        <p>Globally renowned process control system supplier providing advanced process control and industrial IoT solutions for steel enterprises.</p>
-                        <a href="http://www.honeywellprocess.com" target="_blank" rel="noopener">Visit Website →</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Shanghai Electric</h3>
-                        <p>Large comprehensive equipment manufacturing group in China providing power equipment, automation systems, and industrial services for steel enterprises.</p>
-                        <a href="http://www.shanghai-electric.com" target="_blank" rel="noopener">Visit Website →</a>
+                    <div class="support-card">
+                        <h3>Contact</h3>
+                        <p>Get in touch with our support team for assistance.</p>
+                        <a href="#">Contact us</a>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">NavigateHub</div>
+                    <p>Elevate your navigation experience</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 NavigateHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
